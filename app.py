@@ -66,6 +66,7 @@ ANOMALY_OPTIONS = [
     "bite or clip missing from edge",
     "coin wider than normal, no rim",
     "extra metal / blob / crack lines",
+    "tiny chip, hairline crack, or faint strike-through mark",
     "looks silvery (possible silver)",
     "mint mark looks doubled or odd",
     "design looks rotated / misaligned",
@@ -438,7 +439,7 @@ with tab_history:
         st.caption("Nothing checked yet — your checks will land here.")
     else:
         for h in history:
-            icon = {"jackpot": "🔥", "look": "👀"}.get(h.get("top_heat"), "🪙")
+            icon = {"jackpot": "🔥", "look": "👀", "minor": "👀"}.get(h.get("top_heat"), "🪙")
             with st.expander(f"{icon} {h['time']} — {h['coin']}"):
                 st.caption(f"via {h.get('source', '?')}")
                 if h.get("anomalies"):

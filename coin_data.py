@@ -9,7 +9,7 @@ and get $1k+ coins authenticated by PCGS or NGC.
 Entry fields: denomination (str or list, None = any), year (int or None),
 year_min/year_max (optional bounds), mint (list or None = any),
 name, look_for (plain-language visual description, also keyword-matched),
-value_low/value_high (USD), value_note, heat ("jackpot"|"look"),
+value_low/value_high (USD), value_note, heat ("jackpot"|"look"|"minor"),
 category ("error"|"key_date"|"silver"), replica_only (optional).
 """
 
@@ -581,6 +581,42 @@ DATA = [
         "value_high": 150,
         "value_note": "Small cuds $5+; large rim cuds obliterating design to $150+.",
         "heat": "jackpot",
+        "category": "error"
+    },
+    {
+        "denomination": None,
+        "year": None,
+        "mint": None,
+        "name": "Die chip — minor (any denomination)",
+        "look_for": "A tiny raised chip or blob of extra metal sitting on a letter, number, or design detail, where a small piece of the die broke away. The classic is the 'BIE' chip on cents, a little blob between the B and E of LIBERTY. Small chips like this are common and modest — a big blob on the rim is a cud, a different and bigger find.",
+        "value_low": 3,
+        "value_high": 25,
+        "value_note": "Small chips in circulated condition, typically $3-$25. Not a certified value — compare sold listings.",
+        "heat": "minor",
+        "category": "error"
+    },
+    {
+        "denomination": None,
+        "year": None,
+        "mint": None,
+        "name": "Small die crack (any denomination)",
+        "look_for": "A thin hairline raised crack wandering across the coin's surface — a hairline fracture in the die, not a scratch (scratches cut inward, cracks stand up). Small cracks away from the rim are common and modest; a crack that breaks off a chunk at the rim is a cud, worth more.",
+        "value_low": 3,
+        "value_high": 25,
+        "value_note": "Small cracks in circulated condition, typically $3-$25. Not a certified value — compare sold listings.",
+        "heat": "minor",
+        "category": "error"
+    },
+    {
+        "denomination": None,
+        "year": None,
+        "mint": None,
+        "name": "Minor strike-through (any denomination)",
+        "look_for": "A small faint smear, blank patch, or weak spot where grease or debris got between the die and the coin — a minor strike-through. Small grease strikes are common; only large or dramatic strike-throughs carry real premiums.",
+        "value_low": 3,
+        "value_high": 25,
+        "value_note": "Minor strike-throughs in circulated condition, typically $3-$25. Not a certified value — compare sold listings.",
+        "heat": "minor",
         "category": "error"
     },
     {
