@@ -37,7 +37,7 @@ PROVIDERS = {
     "OpenRouter (free models, no card)": "https://openrouter.ai/api/v1",
     "OpenAI": "https://api.openai.com/v1",
 }
-DEFAULT_MODEL = "google/gemma-4-26b-a4b-it:free"  # free, sees images
+DEFAULT_MODEL = "openrouter/free"  # auto-router: picks a free vision model with room
 HISTORY_FILE = "history.json"
 MAX_IMAGE_SIDE = 1568
 
